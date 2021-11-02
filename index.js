@@ -1,19 +1,15 @@
-
-function writeCards (recipients, events) {
-
-    const messages = [];
-
-    for (let i = 0; i < recipients.length; i++) {
-        const thankYouMessage = `Thank you, ${recipients[i]}, for the wonderful ${events} gift!`;
-        messages.push(thankYouMessage);
+function writeCards(people, event) {
+    const cardArray = [];
+    for (let i = 0; i < people.length; i++) {
+        const card = `Thank you, ${people[i]}, for the wonderful ${event} gift!`;
+        cardArray.push(card);
     }
-
-    return messages;
+    return cardArray;
 }
 
-function countDown (integer) {
-    while (integer != -1) {
-        console.log(integer);
-        integer--;
+function countDown(number) {
+    while(number >= 0) {
+        console.log(number);
+        number --;
     }
 }
